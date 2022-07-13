@@ -1,0 +1,131 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100%;
+  max-width: 1694;
+  background: #fff;
+}
+
+.wrapper-title {
+  position: relative;
+  z-index: 1;
+}
+.wrapper-title ::before {
+  content: "";
+  position: absolute;
+  width: 640px;
+  height: 22px;
+  background: #4385F4;
+  margin: auto;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 678px) {
+  .wrapper-title ::before {
+    width: 330px;
+    height: 15px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .wrapper-title ::before {
+    width: 300px;
+    height: 15px;
+  }
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  color: #313131;
+  font-size: calc(35px + 1.4757969303vw);
+  font-weight: 700;
+  line-height: 108px;
+}
+@media screen and (max-width: 678px) {
+  .title {
+    font-size: calc(35px + 42.5 * (100vw - 320px) / 1694);
+  }
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 35px 0 65px 0;
+  gap: 42px;
+}
+
+.main-content {
+  max-width: 480px;
+  height: 730px;
+  background: #FFEB01;
+  text-align: center;
+}
+.main-content__text {
+  padding: 0 5%;
+  margin-top: 20%;
+  color: #000000;
+  font-weight: 400;
+  line-height: 72px;
+  font-size: calc(35px + 0.2951593861vw);
+}
+@media screen and (max-width: 768px) {
+  .main-content__text {
+    font-size: calc(25px + 25.5 * (100vw - 320px) / 1694);
+  }
+}
+.main-content__link {
+  display: block;
+  color: #4385F4;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72px;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .main-content__link {
+    font-size: calc(25px + 25.5 * (100vw - 320px) / 1694);
+  }
+}
+
+.block-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 8vh;
+}
+@media screen and (max-width: 1494px) {
+  .block-link {
+    height: 16vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-link {
+    height: 24vh;
+  }
+}/*# sourceMappingURL=style.css.map */
